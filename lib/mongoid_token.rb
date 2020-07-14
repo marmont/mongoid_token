@@ -1,7 +1,9 @@
-# frozen_string_literal: true
-
-require "zeitwerk"
-require "active_support/concern"
-loader = Zeitwerk::Loader.for_gem
-loader.ignore(__FILE__)
-loader.setup
+require_relative './version'
+require_relative './mongoid/token/error'
+require_relative './mongoid/token/collision_resolver'
+require_relative './mongoid/token/collision_retries_exceeded'
+require_relative './mongoid/token/collisions'
+require_relative './mongoid/token/finders'
+require_relative './mongoid/token/generator'
+require_relative './mongoid/token/options'
+require_relative './mongoid/token'

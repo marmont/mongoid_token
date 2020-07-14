@@ -20,7 +20,6 @@ Gem::Specification.new do |s|
                                            .map { |f| File.basename(f) }
   s.require_paths = %w[lib]
   s.add_dependency 'mongoid', '>= 6'
-  s.add_dependency 'zeitwerk'
   s.add_development_dependency 'appraisal', '~> 2.2'
   s.add_development_dependency 'wwtd'
 end
